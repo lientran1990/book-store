@@ -45,16 +45,10 @@ function BooksCarousel({ books }) {
                   src={book.volumeInfo?.imageLinks?.thumbnail}
                   style={{ height: "300px" }}
                 />
-                <Card.Body>
+                <Card.Body className="card-body d-flex flex-column">
                   <Card.Title>{book.volumeInfo?.title}</Card.Title>
                   <Card.Text>{books.volumeInfo?.authors}</Card.Text>
-                  <Button
-                    // mt-auto
-                    variant="outline-secondary"
-                    // style={{ marginBottom: "5rem" }}
-                  >
-                    Details
-                  </Button>
+                  <Button variant="outline-secondary">Details</Button>
                 </Card.Body>
               </Card>
             </div>
